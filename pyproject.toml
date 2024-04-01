@@ -43,9 +43,9 @@ dev = [
 ]
 
 [project.urls]
-Documentation = "https://github.com/unknown/piah#readme"
-Issues = "https://github.com/unknown/piah/issues"
-Source = "https://github.com/unknown/piah"
+Documentation = "https://github.com/fabiobarkoski/piah#readme"
+Issues = "https://github.com/fabiobarkoski/piah/issues"
+Source = "https://github.com/fabiobarkoski/piah"
 
 [tool.hatch.version]
 path = "piah/__about__.py"

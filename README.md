@@ -11,6 +11,9 @@ Piah is based in the [OxyParser](https://github.com/oxylabs/OxyParser/)
 **Table of Contents**
 
 - [Installation](#installation)
+- [Example](#example)
+- [TODO](#todo)
+- [Know Issues](#know-issues)
 - [License](#license)
 
 ## Installation
