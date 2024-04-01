@@ -33,6 +33,7 @@ dependencies = [
   "tiktoken",
   "litellm",
   "python-dotenv",
+  "setuptools",
 ]
 
 [project.optional-dependencies]
