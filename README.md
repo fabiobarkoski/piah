@@ -5,8 +5,8 @@
 
 -----
 
-Piah automatically parse the data from PDF or texts based only in the dataclass that you provide and return the same dataclass fullfilled with the values.
-Piah is based in the (OxyParser)[https://github.com/oxylabs/OxyParser/]
+Piah automatically parse the data from PDF's or texts based only in the [dataclass](https://docs.python.org/3/library/dataclasses.html#module-dataclasses) that you provide and return the same [dataclass](https://docs.python.org/3/library/dataclasses.html#module-dataclasses) fullfilled with the values.
+Piah is based in the [OxyParser](https://github.com/oxylabs/OxyParser/)
 
 **Table of Contents**
 
@@ -32,6 +32,21 @@ class Person:
 parser = Piah("gpt-3.5-turbo")
 result = parser.parse("Hello Iam python and I have 33 years old", Person)
 ```
+to parse PDF's:
+```python
+result = parser.parse("example.pdf", Person)
+#or
+result = parser.parse(Path("example.pdf"), Person)
+```
+
+## TODO
+- [ ] Write docstrings
+- [ ] Improve allowed types
+- [ ] Improve system prompt
+
+## Know Issues
+Seems that `piah` don't pass every time in the test, because the LLM don't parse
+correctly every time large PDF's
 
 ## License
 
