@@ -22,7 +22,15 @@ Piah is based in the [OxyParser](https://github.com/oxylabs/OxyParser/)
 pip install piah
 ```
 
-## Example
+## Usage
+
+first, set your key in the environment variables like:
+```python
+import os
+
+os.environ["OPENAI_API_KEY"] = "your-api-key"
+```
+or set in a `.env` file and then just use `piah`, e.g:
 ```python
 from piah import Piah
 from dataclasses import dataclass
@@ -41,6 +49,10 @@ result = parser.parse("example.pdf", Person)
 #or
 result = parser.parse(Path("example.pdf"), Person)
 ```
+## Supported Models and Providers
+
+`piah` uses [LiteLLM](https://litellm.ai/), so consult the [LiteLLM docs](https://docs.litellm.ai/docs/providers) to check if the desired Model is supported.
+
 
 ## TODO
 - [ ] Write docstrings
